@@ -16,12 +16,7 @@ const UserSchema = new Schema(
       unique: true
     },
    
-    size: {
-      type: String,
-      required: true,
-      enum: ['Personal', 'Small', 'Medium', 'Large', 'Extra Large'],
-      default: 'Large'
-    },
+   
   friends: [
     {
       type: Schema.Types.ObjectId,

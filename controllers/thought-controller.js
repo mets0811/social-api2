@@ -71,7 +71,18 @@ const thoughtController = {
     )
       .then(dbUserData => res.json(dbUserData))
       .catch(err => res.json(err));
-  }
+  },
+  getAllThoughts(req,res){
+    res.json({ok:true})
+  },
+  getThoughtById(req,res){
+    res.json({ok:true})
+  },
+  updateThought(req,res){
+    res.json({ok:true})
+  },
 };
 
 module.exports = thoughtController;
+
+
